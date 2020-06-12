@@ -51,8 +51,9 @@ public class Main {
             String saveUser = userInput.readString("Save account (s)");
             if (!saveUser.isBlank() && saveUser.charAt(0) == 's') {
                 accountRepo.addAccount(account);
+                System.out.println("Account saved!");
                 break;
-            }
+            } else System.out.println("Account not saved!");
         }
     }
 
